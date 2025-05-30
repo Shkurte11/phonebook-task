@@ -76,7 +76,7 @@ const RegistrationForm = () => {
       const { Name, LastName, Address, City, Country, Email, Number } = formData;
 
       const res = await axios.post(
-          "http://localhost:3001/api/contact",
+          "http://localhost:3001/api/contact/register",
           {
             Name, LastName, Address, City, Country,
             Emails: Email, Numbers: Number
